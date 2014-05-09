@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Timing</title>
+</head>
+<body>
+	<h2>Midterm</h2>
+	<script>
+		var time= new Date();
+		var start = time.getTime();
+		var current=start;
+		var stop=start+10000;
+		var num=1;
+		while(current<stop){ 
+			alert(num);
+			current=new Date();
+			num++;
+		}
+		
+			setTimeout(function(){alert(num/10 +" alert box per second");},1000);
+		
+		
+	</script>
+</body>
+</html>
